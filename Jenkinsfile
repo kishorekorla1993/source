@@ -13,7 +13,7 @@ pipeline {
             sh 'docker build -t img5 .'
             }
         }
-        stage('docker'){
+        stage('docker_cont'){
             steps{
                 
             sh 'docker run -itd --name contkishore -p 4050:80 img5'
